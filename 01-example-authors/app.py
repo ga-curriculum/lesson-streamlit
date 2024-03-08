@@ -41,7 +41,7 @@ elif page == 'Make a prediction':
     st.title('Which author do you write like?')
 
     # Open your model!
-    with open('models/author_pipe.pkl', 'rb') as f:
+    with open('../models/austen-poe-detector.pkl', 'rb') as f:
         model = pickle.load(f)
 
     # Text input
